@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gói dịch vụ | AnoC</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'home/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'home/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'home/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'home/assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Anoc
+  * Template URL: https://bootstrapmade.com/Anoc-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="pricing-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="{% url 'home:home' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="{% static 'home/assets/img/logo.png' %}" alt=""> -->
+        <h1 class="sitename">AnoC</h1> <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home:home' %}" >Trang chủ</a></li>
+          <li><a href="{% url 'home:about' %}" >Về chúng tôi</a></li>
+          <li><a href="{% url 'home:services' %}">Tính năng</a></li>
+          <!-- <li><a href="{% url 'home:projects' %}">Dự án</a></li>
+          <li><a href="{% url 'home:blog' %}">Blog</a></li> -->
+          <li><a href="{% url 'home:pricing' %}" class="active">Gói dịch vụ</a></li>
+          <li><a href="{% url 'home:contact' %}">Liên hệ</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url({% static 'home/assets/img/pagetitle_bg.jpg' %});">
+      <div class="container position-relative">
+        <h1>Về chúng tôi</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'home:home' %}">Trang chủ</a></li>
+            <li class="current">Gói dịch vụ</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- About Section -->
+    <section id="pricing" class="pricing section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Gói dịch vụ</h2>
+  
+        </div><!-- End Section Title -->
+  
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row g-4"> 
+        <div class="col-lg-4">
+          <div class="pricing-item">
+            <h3>Gói Cơ Bản</h3>
+            <div class="icon">
+              <i class="bi bi-box"></i>
+            </div>
+            <h4>49,000<span><sup>VND</sup> / 1 month</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Người dùng được sử dụng các chức năng cơ bản trên website</span></li>
+              <li><i class="bi bi-check"></i> <span>Chia sẻ tệp tin, hình ảnh (giới hạn dung lượng)</span></li>
+              <li><i class="bi bi-check"></i> <span>Hỗ trợ công cụ chatbot AI (giới hạn số lần sử dụng)</span></li>
+            </ul>
+            <div class="text-center"><a href="{% url 'home:payment' %}?amount=49000" class="buy-btn">Thanh toán</a></div>
+          </div>
+        </div><!-- End Pricing Item -->
+
+        <div class="col-lg-4">
+          <div class="pricing-item featured">
+            <h3>Gói Nâng Cao</h3>
+            <div class="icon">
+              <i class="bi bi-rocket"></i>
+            </div>
+            <h4>99,000<span><sup>VND</sup> / 1 tháng</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Tất cả tính năng của Gói Cơ Bản</span></li>
+              <li><i class="bi bi-check"></i> <span>Chia sẻ tệp tin, hình ảnh (KHÔNG giới hạn dung lượng)</span></li>
+              <li><i class="bi bi-check"></i> <span>Hỗ trợ công cụ chatbot AI (giới hạn số lần sử dụng)</span></li>
+            </ul>
+            <div class="text-center"><a href="{% url 'home:payment' %}?amount=99000" class="buy-btn">Thanh toán</a></div>
+          </div>
+        </div><!-- End Pricing Item -->
+
+        <div class="col-lg-4">
+          <div class="pricing-item">
+            <h3>Gói Cao Cấp</h3>
+            <div class="icon">
+              <i class="bi bi-send"></i>
+            </div>
+            <h4>159,000<span><sup>VND</sup> / 1 tháng</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Tất cả tính năng của Gói Nâng Cao</span></li>
+              <li><i class="bi bi-check"></i> <span>Hỗ trợ công cụ chatbot AI (KHÔNG giới hạn số lần sử dụng)</span></li>
+            </ul>
+            <div class="text-center"><a href="{% url 'home:payment' %}?amount=159000" class="buy-btn">Thanh toán</a></div>
+          </div>
+        </div><!-- End Pricing Item -->
+      </div>
+    </div>
+
+      </section><!-- /Pricing Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <h1 class="sitename">Anoc</h1> <span>.</span>
+            <span class="sitename">Anoc</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Khu Công nghệ cao Hòa Lạc</p>
+            <p>Km29 Đại lộ Thăng Long, huyện Thạch Thất, Hà Nội</p>
+            <p class="mt-3"><strong>Số điện thoại:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Liên kết</h4>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Tính năng</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Anoc</strong> <span>All Rights Reserved</span></p>
+ 
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'home/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'home/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

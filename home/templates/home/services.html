@@ -1,0 +1,463 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tính năng | AnoC</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'home/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'home/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'home/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'home/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'home/assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Anoc
+  * Template URL: https://bootstrapmade.com/Anoc-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="{% url 'home:home' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="{% static 'home/assets/img/logo.png' %}" alt=""> -->
+        <h1 class="sitename">AnoC</h1> <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home:home' %}" >Trang chủ</a></li>
+          <li><a href="{% url 'home:about' %}" >Về chúng tôi</a></li>
+          <li><a href="{% url 'home:services' %}"class="active">Tính năng</a></li>
+          <!-- <li><a href="{% url 'home:projects' %}">Dự án</a></li>
+          <li><a href="{% url 'home:blog' %}">Blog</a></li> -->
+          <li><a href="{% url 'home:pricing' %}">Gói dịch vụ</a></li>
+          <li><a href="{% url 'home:contact' %}">Liên hệ</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url({% static 'home/assets/img/pagetitle_bg.jpg' %});">
+      <div class="container position-relative">
+        <h1>Tính năng</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'home:home' %}">Trang chủ</a></li>
+            <li class="current">Tính năng</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Tích hợp trợ lý AI AnoC</h3>
+              <p>Chatbot có thể trả lời các câu hỏi liên quan đến môn học, chuyên ngành hoặc các câu hỏi thường gặp. Phân tích thông tin đầu vào và hành vi của người dùng để đưa ra các gợi ý chuyên biệt cho nội dung học tập.</p>
+              <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>Sử dụng ẩn danh</h3>
+              <p>AnoC cho phép sinh viên chia sẻ và giao tiếp với nhau trong khi vẫn ẩn danh. Tính năng ẩn danh cũng có thể khuyến khích những người ngại nói chuyện với người khác hoặc gặp khó khăn khi tạo cuộc trò chuyện với người lạ.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3>Quản trị viện và quyền lợi</h3>
+              <p>Những người tạo nhóm được cấp quyền để theo dõi và xóa các tin nhắn không phù hợp. Việc cung cấp tính năng này sẽ giúp nền tảng trở thành không gian học tập phù hợp cho sinh viên một cách tự nhiên, đồng thời giúp họ tránh xa nền văn hóa độc hại trên internet.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-trowel-bricks"></i>
+              </div>
+              <h3>Chia các nhóm theo từng chuyên ngành</h3>
+              <p>Sử dụng AI để tự động ghép nối sinh viên theo chuyên ngành, giúp họ dễ dàng tham gia các nhóm trò chuyện có sẵn với những người cùng chuyên ngành. Điều này giúp sinh viên nhanh chóng tìm kiếm và kết nối với nhau để học tập, thay vì phải tự tạo và tập hợp các nhóm.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </div>
+              <h3>Chia sẻ tài liệu môn học</h3>
+              <p>Cho phép chia sẻ tệp, hình ảnh và tài liệu học tập trong kênh trò chuyện, hỗ trợ các định dạng phổ biến như PDF, DOCX và PPTX. Học sinh có thể tải xuống trực tiếp các tệp sau khi được chia sẻ, giúp dễ dàng trao đổi tài liệu học tập.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>Cung cấp công cụ để học tập</h3>
+              <p>Tích hợp công cụ học tập như bảng trắng ảo, giúp người dùng làm việc cùng nhau và giải quyết nhiệm vụ trực quan hơn. Hỗ trợ ghi chú chia sẻ trong trò chuyện, tăng hiệu quả học tập và khả năng hợp tác giữa các học sinh.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Features Cards Section -->
+    <section id="features-cards" class="features-cards section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>Trò chuyện bằng giọng nói</h3>
+            <p>Tính năng trò chuyện bằng giọng nói, giúp học sinh tiết kiệm thời gian và dễ dàng giải thích các vấn đề phức tạp hơn so với nhắn tin văn bản.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check2"></i> <span>Các nhóm khác nhau cho từng môn học, nơi người dùng có thể gửi tin nhắn thoại trong từng nhóm.</span></li>
+              <li><i class="bi bi-check2"></i> <span>Cho phép người dùng dễ dàng chuyển đổi giữa trò chuyện bằng văn bản và giọng nói.</span></li>
+            </ul>
+          </div><!-- End feature item-->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <h3>Tính năng thông báo</h3>
+            <p>Thông báo sẽ thực sự hữu ích khi có tin quan trọng nào đó trong lúc người dùng không trực tuyến trên nền tảng. Người dùng có thể bật tắt bất kỳ lúc nào chỉ bằng vài cú nhấp chuột hoặc thu nhỏ một số thông báo dựa trên sở thích cá nhân.</p>
+
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check2"></i> <span>Thông báo khi có tin nhắn mới hoặc thành viên mới tham gia.</span></li>
+              <li><i class="bi bi-check2"></i> <span>Tùy chỉnh thông báo theo sở thích cá nhân.</span></li>
+            </ul>
+          </div><!-- End feature item-->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <h3>Giao diện cá nhân hoá</h3>
+            <p>Cho phép người dùng tùy chỉnh chế độ hiển thị theo sở thích cá nhân. Chế độ tối giúp giảm mỏi mắt khi sử dụng trong điều kiện ánh sáng yếu. Người dùng có thể dễ dàng chuyển đổi giữa hai chế độ để tối ưu hóa trải nghiệm học tập của mình.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check2"></i> <span>Giao diện sáng/tối.</span></li>
+              <li><i class="bi bi-check2"></i> <span>Tùy chỉnh bố cục hiển thị để thuận tiện cho việc học tập và trao đổi.</span></li>
+            </ul>
+          </div><!-- End feature item-->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <h3>Bảo mật quyền riêng tư</h3>
+            <p>Mã hóa tin nhắn đảm bảo tính bảo mật, toàn vẹn và xác thực thông tin, bảo vệ nội dung khỏi truy cập trái phép và mạo danh. Ngăn tin nhắn bị thay đổi, xác minh người gửi, người nhận, và ngăn chặn rò rỉ tài liệu học tập trên các mạng không an toàn.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check2"></i> <span>Tin nhắn được mã hóa.</span></li>
+              <li><i class="bi bi-check2"></i> <span>Quyền riêng tư cho các kênh trò chuyện.</span></li>
+            </ul>
+          </div><!-- End feature item-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Cards Section -->
+
+    <!-- Alt Services 2 Section -->
+    <section id="alt-services-2" class="alt-services-2 section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h3>Thông tin về tính năng AI</h3>
+            <p>Nền tảng tích hợp AI hỗ trợ học tập, phân tích dữ liệu cá nhân hóa, ghi chú tự động, phát hiện nội dung không phù hợp và cung cấp chatbot để trả lời các câu hỏi thường gặp.</p>
+
+            <div class="row">
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-easel flex-shrink-0"></i>
+                <div>
+                  <h4>AI hỗ trợ học tập:</h4>
+                  <p>Trợ lý AI có thể giúp trả lời các câu hỏi liên quan đến chủ đề, giải thích các khái niệm khó và đưa ra các gợi ý học tập.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>Phân tích dữ liệu học tập:</h4>
+                  <p>AI phân tích hành vi học tập của người dùng để đưa ra các gợi ý được cá nhân hóa về nội dung và phương pháp học tập.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>Ghi chú tự động:</h4>
+                  <p>AI có thể tự động tóm tắt các cuộc thảo luận và ghi chú các điểm quan trọng trong cuộc trò chuyện.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>Phát hiện nội dung không phù hợp:</h4>
+                  <p>AI có thể phát hiện và cảnh báo về nội dung không phù hợp hoặc theo quy định trong các kênh trò chuyện.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+
+          </div>
+
+          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'home/assets/img/AI_students.jpg' %}" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Alt Services 2 Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5500
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'home/assets/img/testimonials/truong_gia_binh.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Trương Gia Bình</h3>
+                  <h4>CEO &amp; Founder of FPT</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Tôi rất ấn tượng với AnoC! Nền tảng này tạo ra một môi trường học tập an toàn và bảo mật, cho phép sinh viên tự do trao đổi thông tin. Tính năng hỗ trợ AI giúp tìm kiếm tài liệu và giải đáp thắc mắc nhanh chóng, làm cho việc học trở nên dễ dàng hơn. Đây là công cụ thiết thực cho mọi sinh viên!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'home/assets/img/testimonials/hoang_nam_tien.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Hoàng Nam Tiến</h3>
+                  <h4>Chairman of the management board of FPT Software
+                  </h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>AnoC thật sự là một giải pháp tuyệt vời cho sinh viên! Nền tảng này không chỉ bảo mật và ẩn danh mà còn cung cấp hỗ trợ AI thông minh giúp nâng cao trải nghiệm học tập. Việc chia sẻ tài liệu và kiến thức trở nên dễ dàng và an toàn hơn bao giờ hết. Tôi rất thích cách mà AnoC tạo ra một không gian học tập thân thiện và hiệu quả!.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'home/assets/img/testimonials/pham_nhat_vuong.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Phạm Nhật Vượng </h3>
+                  <h4>CEO of VinFast LLC</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>AnoC thật sự hữu ích! Giao diện dễ dùng và mình có thể tạo nhóm học một cách nhanh chóng mà không cần chia sẻ thông tin cá nhân. Đây thực sự là một sản phẩm có tác dụng!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'home/assets/img/testimonials/mark_zuckerberg.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Mark Zuckerberg</h3>
+                  <h4>CEO of Facebook</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>AnoC is an impressive platform, seamlessly bringing students together while prioritizing privacy and collaboration. It’s a remarkable tool for modern education. I will consider to have a collab between AnoC and Facebook.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'home/assets/img/testimonials/elon_musk.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Elon Musk</h3>
+                  <h4>CEO of Tesla &amp; SpaceX</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>AnoC is a game-changer. It's innovative, efficient, and creates a secure environment for students to connect and learn. The future of education is here.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <h1 class="sitename">Anoc</h1> <span>.</span>
+            <span class="sitename">Anoc</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Khu Công nghệ cao Hòa Lạc</p>
+            <p>Km29 Đại lộ Thăng Long, huyện Thạch Thất, Hà Nội</p>
+             <p class="mt-3"><strong>Số điện thoại:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Liên kết</h4>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Tính năng</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Anoc</strong> <span>All Rights Reserved</span></p>
+ 
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'home/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'home/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'home/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
