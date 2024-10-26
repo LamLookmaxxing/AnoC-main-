@@ -30,6 +30,7 @@ CHANNEL_LAYERS = {
 
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,9 +44,15 @@ INSTALLED_APPS = [
 ]
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'home' / 'static',
-]
+
+STATIC_DIRS = [os.path.join(BASE_DIR, 'home/static')]
+
+STATIC_ROOT = [os.path.join(BASE_DIR, 'staticfiles')]
+
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'home' / 'static',
+# ]
+
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -68,6 +75,7 @@ TEMPLATES = [
 
 LOGIN_REDIRECT_URL = '/chat/'
 MIDDLEWARE = [
+    'django.middleware.WhiteNoiseMiddleware'
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
